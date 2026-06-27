@@ -1,0 +1,15 @@
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\bin\Debug\net8.0\Accounting.DataLayer.deps.json
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\bin\Debug\net8.0\Accounting.DataLayer.runtimeconfig.json
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\bin\Debug\net8.0\Accounting.DataLayer.dll
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\bin\Debug\net8.0\Accounting.DataLayer.pdb
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.csproj.AssemblyReference.cache
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.AssemblyInfoInputs.cache
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.AssemblyInfo.cs
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.sourcelink.json
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.dll
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\refint\Accounting.DataLayer.dll
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.pdb
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\Accounting.DataLayer.genruntimeconfig.cache
+C:\Users\Mohsen\Documents\Accounting\Accounting.DataLayer\obj\Debug\net8.0\ref\Accounting.DataLayer.dll
