@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Accounting.DataLayer.Services;
 
-public class CustomerRepository : ICustomerRepository
+public class CustomerRepository(AccountingDbContext context) : ICustomerRepository
 {
-    AccountingDbContext db = new AccountingDbContext();
+    private readonly AccountingDbContext db = context;
 
     public bool DeleteCustomer(Customer customer)
     {
