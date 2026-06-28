@@ -33,6 +33,11 @@ public class CustomerRepository(AccountingDbContext context) : ICustomerReposito
         return db.Customers.ToList();
     }
 
+    public IEnumerable<Customer> SearchCustomers(string parameter)
+    {
+        return db.Customers.Where(c => c.FullName.Contains(parameter) || c.Address.Contains(parameter) || c.Email.Contains(parameter)).ToList();
+    }
+
     public Customer GetCustomer(int customerId)
     {
         return db.Customers.Find(customerId);
@@ -49,11 +54,6 @@ public class CustomerRepository(AccountingDbContext context) : ICustomerReposito
         {
             return false;
         }
-    }
-
-    public void Save()
-    {
-        db.SaveChanges();
     }
 
     public bool UpdateCustomer(Customer customer)

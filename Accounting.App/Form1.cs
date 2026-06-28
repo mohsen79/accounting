@@ -6,4 +6,10 @@ public partial class Form1 : Form
     {
         InitializeComponent();
     }
+
+    private void btnCustomers_Click(object senders, EventArgs e)
+    {
+        FrmCustomers frm = new FrmCustomers();
+        frm.ShowDialog();
+    }
 }

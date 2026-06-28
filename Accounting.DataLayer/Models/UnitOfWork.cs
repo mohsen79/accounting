@@ -20,6 +20,11 @@ public class UnitOfWork : IDisposable
         }
     }
 
+    public void Save()
+    {
+        db.SaveChanges();
+    }
+
     public void Dispose()
     {
         db.Dispose();

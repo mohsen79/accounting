@@ -5,10 +5,10 @@ namespace Accounting.DataLayer.Repositories;
 public interface ICustomerRepository
 {
     List<Customer> GetAllCustomers();
+    IEnumerable<Customer> SearchCustomers(string parameter);
     Customer GetCustomer(int customerId);
     bool InserCustomer(Customer customer);
     bool UpdateCustomer(Customer customer);
     bool DeleteCustomer(Customer customer);
     bool DeleteCustomer(int customerId);
-    void Save();
 }
