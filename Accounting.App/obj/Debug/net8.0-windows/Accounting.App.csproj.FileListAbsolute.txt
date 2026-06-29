@@ -68,3 +68,4 @@ C:\Users\Mohsen\Documents\Accounting\Accounting.App\obj\Debug\net8.0-windows\Acc
 C:\Users\Mohsen\Documents\Accounting\Accounting.App\obj\Debug\net8.0-windows\Accounting.App.csproj.GenerateResource.cache
 C:\Users\Mohsen\Documents\Accounting\Accounting.App\obj\Debug\net8.0-windows\Accounting.App.Properties.Resources.resources
 C:\Users\Mohsen\Documents\Accounting\Accounting.App\obj\Debug\net8.0-windows\Accounting.App.Form1.resources
+C:\Users\Mohsen\Documents\Accounting\Accounting.App\obj\Debug\net8.0-windows\Accounting.App.FrmAddOrEditCustomer.resources

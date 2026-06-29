@@ -1,5 +1,6 @@
 using System.Windows.Forms;
 using Accounting.DataLayer.Models;
+using Microsoft.Data.SqlClient;
 
 namespace Accounting.App;
 
@@ -49,5 +50,14 @@ public partial class FrmCustomers : Form
                     BindGrid();
                 }
             }
+    }
+
+    private void BtnAddNewCustomer_Click(object sender, EventArgs e)
+    {
+        FrmAddOrEditCustomer frmAdd = new FrmAddOrEditCustomer();
+        if (frmAdd.ShowDialog() == DialogResult.OK)
+        {
+            BindGrid();
+        }
     }
 }

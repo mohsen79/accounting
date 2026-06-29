@@ -68,6 +68,8 @@
             this.btnAddNewCustomer.Size = new System.Drawing.Size(70, 59);
             this.btnAddNewCustomer.Text = "شخص جدید";
             this.btnAddNewCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAddNewCustomer.Click += new System.EventHandler(this.BtnAddNewCustomer_Click);
+
             // 
             // btnEditCustomer
             // 
