@@ -51,13 +51,32 @@ public partial class FrmCustomers : Form
                 }
             }
     }
-
     private void BtnAddNewCustomer_Click(object sender, EventArgs e)
     {
         FrmAddOrEditCustomer frmAdd = new FrmAddOrEditCustomer();
         if (frmAdd.ShowDialog() == DialogResult.OK)
         {
             BindGrid();
+        }
+    }
+
+    private void BtnEditCustomer(object sender, EventArgs e)
+    {
+        if (dgvCustomers.CurrentRow != null)
+        {
+            int id = (int)dgvCustomers.CurrentRow.Cells[0].Value;
+            using (UnitOfWork db = new UnitOfWork())
+            {
+                FrmAddOrEditCustomer frmAdd = new FrmAddOrEditCustomer(id);
+                if (frmAdd.ShowDialog() == DialogResult.OK)
+                {
+                    BindGrid();
+                }
+            }
+        }
+        else
+        {
+            MessageBox.Show("select a customer");
         }
     }
 }

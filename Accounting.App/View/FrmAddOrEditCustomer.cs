@@ -6,9 +6,29 @@ namespace Accounting.App;
 public partial class FrmAddOrEditCustomer : Form
 {
     private readonly UnitOfWork db = new();
-    public FrmAddOrEditCustomer()
+    private int _id;
+    public FrmAddOrEditCustomer(int id = 0)
     {
         InitializeComponent();
+        _id = id;
+    }
+
+    private void FrmAddOrEditCustomers_Load(object senders, EventArgs e)
+    {
+        if (_id == 0)
+        {
+            btnSave.Text = "Create";
+        }
+        else
+        {
+            Customer customer = db.CustomerRepository.GetCustomer(_id);
+            btnSave.Text = "Edit";
+            txtName.Text = customer.FullName;
+            txtMobile.Text = customer.Mobile;
+            txtAddress.Text = customer.Address;
+            txtEmail.Text = customer.Email;
+            pcCustomer.ImageLocation = Application.StartupPath + "/Images/" + customer.CustomerImage;
+        }
     }
 
     private void btnSelectPhoto_Click(object senders, EventArgs e)
@@ -41,7 +61,16 @@ public partial class FrmAddOrEditCustomer : Form
                 CustomerImage = imageName
             };
 
-            db.CustomerRepository.InserCustomer(newCuctomer);
+            if (_id == 0)
+            {
+                db.CustomerRepository.InserCustomer(newCuctomer);
+            }
+            else
+            {
+                newCuctomer.CustomerId = _id;
+                db.CustomerRepository.UpdateCustomer(newCuctomer);
+            }
+
             db.Save();
             DialogResult = DialogResult.OK;
         }

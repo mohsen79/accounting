@@ -206,6 +206,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcCustomer)).EndInit();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmAddOrEditCustomers_Load);
 
         }
 
